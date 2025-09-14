@@ -44,7 +44,7 @@ footer{
 main{
     width: 80%;
     margin: 120px auto 0;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .recipe{
@@ -54,4 +54,22 @@ main{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #c07402;
+    margin-bottom: 10px;
+}
+
+.gallery{
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
 }
