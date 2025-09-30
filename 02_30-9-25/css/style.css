@@ -1,0 +1,105 @@
+/*link na font z google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*root: farby pre stránku*/
+:root{
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --header-bg-color: #c49bdf;
+    --header-text-color: #ffffff;
+    --footer-bg-color: #333;
+    --footer-text-color: rgb(255, 255, 255);
+    --grey: #f0f0f0;
+    --sellected-color: #fffeb6;
+}
+
+
+
+/*typografia, vzhľad*/
+
+h2, h1{ /*nadpisy pre stránku a jednotlivé odseky*/
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+body{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+main{
+    width: 80%;
+    margin: 120px auto 0;
+    padding: 0 20px;
+}
+
+
+
+/*blok header = typografia, vzhľad, flex*/
+header, ul{
+    background-color: var(--header-bg-color);
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+a{ /*odkazy*/
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-weight: bold;
+}
+
+a:hover{
+    color: var(--header-bg-color);
+    background-color: var(--header-text-color);
+}
+
+
+/*blok footer = typografia, vzhľad, flex*/
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+}
+
+
+
+
+/*pseudo elementy*/
+
+.O_nas p::first-letter{ /*zvýrazní prvé písmeno v odstavci, sekcia o nás*/
+    color: var(--header-bg-color);
+    font-weight: bold;
+}
+
+main div:nth-child(3){ /*zmení farbu pozadia v odstavci, tretí div v main*/
+    background-color: var(--grey);
+}
+
+::selection{ /*výber textu*/
+    background-color: var(--sellected-color);
+}
+
+/* pridá dekoračnú hviezdudu pred a za nadpisy h1 a h2 */
+h1::before{
+    content: "★ ";
+    color: var(--header-bg-color);
+}
+
+h1::after{
+    content: "★ ";
+    color: var(--header-bg-color);
+}
+
+h2::before{
+    content: "★ ";
+    color: var(--header-bg-color);
+}
